@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.slider-container {
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+}
+
+.icon {
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.icon:hover {
+    color: tomato;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
