@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.counter {
+    font-size: 30px;
+}
+
+.progress-bar-ground {
+    height: 10px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.progress-bar-front {
+    height: 10px;
+    background-color: mediumseagreen;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    width: 0%;
+}
