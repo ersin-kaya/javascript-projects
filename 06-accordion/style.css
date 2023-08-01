@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    background-color: bisque;
+    width: 30rem;
+    padding: 1.2rem;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0) 0px 18px 36px -18px inset;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.icons-button {
+    border: none;
+    background: none;
+    color: cadetblue;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.3rem;
+    color: cadetblue;
+    letter-spacing: 3px;
+}
+
+.hide {
+    display: none;
+}
+
+.accordion-content {
+    margin-top: 1.3rem;
+    border-top: 1px solid #ccc;
+    padding: 2rem 0px;
+    color: #444;
+}
