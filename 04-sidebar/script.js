@@ -1,3 +1,5 @@
+"use strict"
+
 const sidebar = document.querySelector('.sidebar');
 const barsIcon = document.querySelector('.fa-bars');
 const closeIcon = document.querySelector('.fa-xmark');
@@ -7,11 +9,15 @@ barsIcon.addEventListener('click', () => {
 });
 
 closeIcon.addEventListener('click', () => {
-    sidebar.classList.remove('show-sidebar');
+    hideSidebar();
 });
 
 document.addEventListener('click', e => {
     if (e.target.tagName === 'HTML') {
-        sidebar.classList.remove('show-sidebar');
+        hideSidebar();
     }
 });
+
+const hideSidebar = () => {
+    sidebar.classList.remove('show-sidebar');
+}
