@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 68, 0, 0.827);
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.531) 0px 22px 70px 4px;
+}
+
+.converter-header {
+    margin-bottom: 1rem;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: x-large;
+}
+
+.converter-section {
+    padding: 1rem;
+}
+
+.temperature-unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.unit-description {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.unit-input {
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.85;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    .temperature-unit {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unit-input {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

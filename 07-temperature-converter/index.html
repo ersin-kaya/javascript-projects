@@ -8,6 +8,30 @@
 </head>
 <body>
 
+    <div class="container">
+        <div class="converter-header">
+            <h3 class="title">Temperature Converter</h3>
+        </div>
+
+        <div class="converter-section">
+            <div class="temperature-unit">
+                <span class="unit-description">Celsius (°C):</span>
+                <input onchange="calculateTemperature(event)" type="number" name="celsius-input" id="celsius-input"
+                    class="unit-input" placeholder="Enter degrees">
+            </div>
+            <div class="temperature-unit">
+                <span class="unit-description">Fahrenheit (°F):</span>
+                <input onchange="calculateTemperature(event)" type="number" name="fahrenheit-input"
+                    id="fahrenheit-input" class="unit-input" placeholder="Enter degrees">
+            </div>
+            <div class="temperature-unit">
+                <span class="unit-description">Kelvin (K):</span>
+                <input onchange="calculateTemperature(event)" type="number" name="kelvin-input" id="kelvin-input"
+                    class="unit-input" placeholder="Enter degrees">
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
