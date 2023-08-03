@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px 0px, rgba(0, 0, 0, 0.22) 0px 10px 10px 0px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+.search-input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.search-submit {
+    display: block;
+    margin: 5px auto 15px;
+    border: none;
+    background-color: bisque;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.bad-request-message {
+    display: block;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.529);
+    border-radius: 10px;
+}
+
+.content {}
+
+.entry-content {
+    padding: 5px;
+}
+
+.text-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.sense {
+    margin-top: 15px;
+}
+
+.sense-header {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid darkorange;
+}
+
+.definition {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.example {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.thesaurus {
+    margin-top: 15px;
+}
+
+.synonyms {
+    word-wrap: break-word;
+}
+
+.antonyms {
+    word-wrap: break-word;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        min-width: 100%;
+    }
+}

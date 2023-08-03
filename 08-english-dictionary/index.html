@@ -8,6 +8,41 @@
 </head>
 <body>
 
+    <div class="container">
+        <h2 class="title">English Dictionary</h2>
+        <input type="text" name="" id="search-input" class="search-input" placeholder="Start typing any word or phrase">
+        <button class="search-submit" id="search-submit">Search</button>
+
+        <span class="bad-request-message hide" id="bad-request-message"></span>
+
+        <div class="content hide" id="content">
+
+            <div class="entry-content">
+                <div class="text-content">
+                    <span class="word" id="word"></span>
+                    <span class="phonetic" id="phonetic"></span>
+                </div>
+                <audio controls class="audio" src="" id="audio" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="sense">
+                <div class="sense-header">
+                    <span class="order">1</span>
+                    <span class="sense-title"></span>
+                </div>
+                <p class="definition hide"></p>
+                <p class="example hide"></p>
+
+                <div class="thesaurus">
+                    <p class="synonyms hide"></p>
+                    <br>
+                    <span class="antonyms hide"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
