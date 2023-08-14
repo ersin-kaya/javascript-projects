@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Popup</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="post">
+      <img
+        class="post-img"
+        src="https://images.pexels.com/photos/2668498/pexels-photo-2668498.jpeg"
+        alt=""
+      />
+      <h2 class="title">Lorem, ipsum dolor.</h2>
+      <p class="comment">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, minima.
+      </p>
+      <button data-video-layer-target="#video-layer" class="open-video-button">
+        watch now
+      </button>
+    </div>
+    <div id="video-layer" class="video-layer">
+      <video
+        class="video"
+        src="coffee-video-2.mp4"
+        controls
+        autoplay
+        muted
+      ></video>
+    </div>
+    <div id="overlay" class="overlay">
+      <i data-close-button class="close-button fa-solid fa-xmark fa-2xl"></i>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
